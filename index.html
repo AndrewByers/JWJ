@@ -37,16 +37,14 @@
         }
 
         .profile-photo {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            background: #e2e8f0;
+            width: 100%;          /* Allows it to scale naturally up to max-width */
+            max-width: 180px;     /* Sets a clean size for a logo banner */
+            height: auto;         /* Prevents stretching */
             margin-bottom: 20px;
-            object-fit: cover;
-            border: 3px solid white;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-
+            object-fit: contain;
+            
+    /* Removed the border-radius circle and background shadows for a clean look */
+       }
         h1 {
             font-size: 1.5rem;
             margin: 0 0 8px 0;
